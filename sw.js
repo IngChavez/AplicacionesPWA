@@ -11,9 +11,8 @@ const STATIC_ASSETS = [
     '/js/app.js',
     '/manifest.json',
     '/images/icon-192x192.png',
-    '/images/icon-512x512.png',
-    'https://cdn.tailwindcss.com',
-    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
+    '/images/icon-512x512.png'
+    
 ];
 
 // FASE DE INSTALACIÓN: Guardando recursos estáticos
@@ -48,5 +47,6 @@ self.addEventListener('activate', event => {
 // FASE FETCH (Escuchando peticiones)
 self.addEventListener('fetch', event => {
     // Por ahora solo monitoreamos en consola
-    console.log('SW pidiendo:', event.request.url);
+    console.log('SW pidiendo:', event.request.url);   
+
 });
